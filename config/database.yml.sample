@@ -1,18 +1,18 @@
-development:
+mysql: &mysql
   adapter: mysql
-  database: chuckslist_dev
+  socket: <%= `mysql_config --socket` %>
   username: rails
   password:
+
+development:
+  <<: *mysql
+  database: chuckslist_dev
 
 test:
-  adapter: mysql
+  <<: *mysql
   database: chuckslist_test
-  username: rails
-  password:
 
 production:
-  adapter: mysql
+  <<: *mysql
   database: chuckslist
-  username: rails
-  password:
   #pool: 10
