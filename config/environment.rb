@@ -75,6 +75,11 @@ Rails::Initializer.run do |config|
 
   config.load_paths += %W( #{RAILS_ROOT}/vendor/uuid-1.0.4/lib )
 
+  # Custom gem requirements
+  #config.gem 'mislav-will_paginate', :version => '~> 2.3.3',
+  #                                   :lib => 'will_paginate',
+  #                                   :source => 'http://gems.github.com'
+
 end
 
 # Define DateTime format for use in our ads email address generator
