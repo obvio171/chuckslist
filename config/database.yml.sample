@@ -1,0 +1,18 @@
+development:
+  adapter: mysql
+  database: chuckslist_dev
+  username: rails
+  password:
+
+test:
+  adapter: mysql
+  database: chuckslist_test
+  username: rails
+  password:
+
+production:
+  adapter: mysql
+  database: chuckslist
+  username: rails
+  password:
+  #pool: 10
