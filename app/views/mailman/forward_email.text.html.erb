@@ -1,4 +1,4 @@
-<%= @email.body %><br/>
+<%= @email.body.gsub(/\n/, "<br/>") %><br/>
 <br/>
 ---<br/>
 Email delivered by Chuckslist.
