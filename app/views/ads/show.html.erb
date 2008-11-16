@@ -1,6 +1,6 @@
 <br/>
 <h1><%=h @ad.title %></h1>
-<h3>Reply to: <%= @ad.email.to_s %></h3>
+<h3>Reply to: <%= mail_to(@ad.email.to_s, nil, :subject => @ad.title) %></h3>
 <br/>
 <p><%=h @ad.ad %></p>
 
