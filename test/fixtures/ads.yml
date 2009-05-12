@@ -5,7 +5,7 @@ test_one:
     ad: "some ad here"
     expiration: 2008-03-01 12:00:00
     email: 200806159145300001@chuckslist.com
-    author_id: 1
+    author_id: 2
     category_id: 1
     created_at: 2008-01-01 09:08:04
     updated_at: 2008-01-01 09:08:04

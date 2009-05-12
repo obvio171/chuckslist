@@ -34,5 +34,6 @@ class Test::Unit::TestCase
   # -- they do not yet inherit this setting
   fixtures :all
 
-  # Add more helper methods to be used by all tests here...
+  # allows to test controllers as a logged-in user
+  include AuthenticatedTestHelper
 end

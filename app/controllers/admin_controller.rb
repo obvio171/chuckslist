@@ -44,8 +44,9 @@ class AdminController < ApplicationController
       cat.destroy
       flash[:notice] = "Category deleted"
       redirect_to :action => 'category'
+    else
+      redirect_to :action => 'category'
     end
-    redirect_to :action => 'category'
   end
   
   def parent_category
